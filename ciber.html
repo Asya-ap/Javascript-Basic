@@ -10,6 +10,58 @@
 
         //Exercici 1
         console.log("Hola mundo");
+
+        //Exercici 2
+        alert("Me llamo Anastasia!");
+
+        //Exercici 3
+        var name = "Anastasia";
+        var surname = "Potapova";
+        console.log(name, surname);
+
+        //Exercici 4
+        var num1 = 34;
+        var num2 = 56;
+
+        console.log("La suma entre " + num1 + " i " + num2 + " es " + (num1 + num2));
+
+        //Exercici 5
+        var nota_examen = prompt("Introduce un numero");
+
+        if(nota_examen < 5){
+            alert("Has suspendido");
+        }
+        if(nota_examen >= 5){
+            alert("Has aprobado");
+        }
+        
+        //Exercici 6
+        var letter = /o/gi;
+        var text = "Tinc un cotxe de color blau";
+        console.log(text.replace('blau','verd'));
+        console.log(text.replace(letter, 'u'));
+
+        //Exercici 7
+        var home = ['taula', 'cadira', 'ordinador', 'libreta'];
+
+        for(i=0;i<home.length; i++){
+            document.write(" - L'objecte " + home[i] + " esta a la posicio " + i + "<br/>");
+        }
+
+        //Exercici 8
+        function calculadora(operador, valor1, valor2){
+
+        if(operador == "suma"){
+            document.write("El resultado es: " + (valor1 + valor2));
+        }
+        if(operador == "resta"){
+        document.write("El resultado es: " + (valor1 - valor2));
+        }
+        if(operador == "dividir"){
+            document.write("El resultado es: " + (valor1 / valor2));
+        }
+        }
+        var resultat = calculadora('resta',40,20);
     </script>
 </body>
 </html>
