@@ -2,7 +2,7 @@
  function calculadora (operador, valor1, valor2){
              
   if(operador === "suma"){
-    return valor1 + valor2;
+    return parseInt(valor1) + parseInt(valor2); //es un string y en javascript el signo + se usa para sumar(en el caso de numeros) y también se usa para concatenar
   }
   if(operador === "resta"){
    return valor1 - valor2;
